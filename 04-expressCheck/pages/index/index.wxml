@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+  <text bindtap="test">运单号：{{expressNum}}</text>
+  <input  focus="{{true}}"   bindblur="bindKeyInput" placeholder="请输入运单号"></input>
+
+  <scroll-view scroll-y='true'>
+    <view wx:for='{{expressInfoArr}}' wx:key='{{index}}'>
+    {{item.datetime}}:{{item.remark}}
+  </view>
+  </scroll-view>
+  
+
+  <button type="primary" bindtap="btnClick">查询</button>
+</view>

@@ -1,0 +1,6 @@
+<view class="ucontainer">
+  <image src="/image/uc.jpg"></image>
+  <view class="nickname">
+    {{userName}}
+  </view>
+</view>
