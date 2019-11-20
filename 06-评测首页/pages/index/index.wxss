@@ -1,0 +1,88 @@
+/* pages/shouye/shouye.wxss */
+swiper{
+    height: 240px;
+}
+swiper image{
+    width: 100%;
+}
+.title{
+    font-size: 16px;
+    margin-top: 10px;
+    border-left: 2px solid green;
+    padding: 5px;
+    /* background-color: #f00; */
+    display: flex;
+    justify-content: space-between;
+}
+.title .allGood{
+    font-size: 14px;
+    color: green;
+}
+.fourImg{
+    /* background-color: #f00; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: 4px solid #ddd;
+}
+.fourImg .content-img{
+    margin: 5px 7px;
+    width: 45%;
+    height: 250rpx;
+    position: relative;
+}
+.fourImg .content-img image{
+    width: 100%;
+    height: 100%;
+}
+.fourImg .content-text{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.7),rgba(0,0,0,0));
+    position: absolute;
+    bottom: 2px;
+}
+.hotContent{
+    width: 100%;
+    height: 500rpx;
+}
+.hotImgList{
+    width: 100%;
+    height: 300rpx;
+    position: relative;
+}
+.hot-img{
+    width: 100%;
+    height: 300rpx;
+}
+.hot-avatar{
+    position: absolute;
+    bottom: -15px;
+    /* transform: translateY(50%); */
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.hot-text{
+    width: 100%;
+    height: 150rpx;
+    /* background-color: #f00; */
+    padding: 10px;
+}
+.hot-title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.hot-content{
+    font-size: 12px;
+    color: #ccc;
+    text-indent: 2em;
+}

@@ -1,0 +1,42 @@
+<!-- 幻灯片 -->
+<swiper class="" indicator-dots="true" autoplay="true" current="0" interval="3000" duration="1000" circular="true">
+    <block wx:for="{{swiperArr}}" wx:key="{{index}}">
+        <swiper-item>
+            <image class="" src="{{item}}" mode='scaleToFill'></image>
+        </swiper-item>
+    </block>
+</swiper>
+<!-- 精品推荐部分 -->
+<view class="command">
+    <view class="title">
+        <text class="commamdTitle">精品推荐</text>
+        <text class="allGood">全部精品</text>
+    </view>
+</view>
+<!-- 图文介绍四宫格部分 -->
+<view class="fourImg" hover-class="none" hover-stop-propagation="false">
+    <view class="content-img" wx:for="{{imgArr}}" wx:key="{{index}}">
+        <image src="{{item}}"></image>
+        <text class="content-text">{{textArr[index]}}</text>
+    </view>
+</view>
+<!-- 热门评测部分 -->
+<view class="hot">
+    <view class="title">
+        <text class="commamdTitle">热门评测</text>
+        <text class="allGood">全部测评</text>
+    </view>
+</view>
+<!-- 评测的内容 -->
+<view class="hotContent">
+    <view wx:for="{{lists}}" wx:key="{{index}}">
+        <view class="hotImgList">
+            <image class="hot-img" src="../../image/img2.png"></image>
+            <image class="hot-avatar" src="../../image/avatar.png"></image>
+        </view>
+        <view class="hot-text">
+            <view class="hot-title">{{hotArr[index]}}</view>
+            <view class="hot-content">{{hotContent[index]}}</view>
+        </view>
+    </view>
+</view>
