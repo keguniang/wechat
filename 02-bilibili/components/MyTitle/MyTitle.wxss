@@ -1,0 +1,26 @@
+/* components/MyTitle/MyTitle.wxss */
+.my_title{
+    padding: 10rpx;
+    display: flex;
+    align-items: center;/* 子元素垂直居中 */
+    justify-content: center;/* 水平居中 */
+    background-color: #fff;
+}
+.logo{
+    flex: 7;
+}
+.search{
+    flex: 2;
+}
+.user{
+    flex:2;
+}
+.down{
+    flex: 3;
+    background-color: pink;
+    color: #fff;
+    font-size: 25rpx;
+    border-radius: 10rpx;
+    padding: 10rpx;
+    text-align: center;
+}

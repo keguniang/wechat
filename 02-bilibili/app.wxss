@@ -1,0 +1,16 @@
+/* 将此全局引入 */
+
+@import 'styles/font-awesome.wxss'
+/**app.wxss**/
+
+
+/* 不支持通配符 */
+
+page,
+view,
+image,
+swiper,
+navigator,
+video {
+    box-sizing: border-box;
+}

@@ -1,0 +1,105 @@
+page {
+    padding: 10rpx;
+}
+
+.video_detail {
+    margin-top: 10rpx;
+}
+
+.video_detail video {
+    width: 100%;
+}
+
+.video_describe {
+    margin-top: 10rpx;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30rpx;
+}
+
+.video_info text {
+    margin-right: 15rpx;
+}
+
+.video_info text:nth-child(1) {
+    font-size: 24rpx;
+}
+
+.video_info text:nth-child(2),
+.video_info text:nth-child(3),
+.video_info text:nth-child(4) {
+    color: #666;
+    font-size: 24rpx;
+}
+
+
+/* 推荐视频部分 */
+
+.recomment_wrap navigator {
+    display: flex;
+    justify-content: space-between;
+    padding: 15rpx;
+}
+
+image {
+    width: 100%;
+    border-radius: 15rpx;
+    display: flex;
+    flex: 1;
+    margin-right: 15rpx;
+}
+
+.recomment_info {
+    display: flex;
+    flex: 3;
+    font-size: 24rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.recomment_info .video_title {
+    color: #e06f93;
+}
+
+.recomment_info .recomment_detail {
+    font-size: 22rpx;
+    color: #666;
+}
+
+.recomment_info .recomment_detail .play_count {
+    margin-right: 20rpx;
+}
+
+/* 评论部分 */
+.comment_title{
+    margin-bottom: 20rpx;
+}
+.comment_body{
+    display: flex;
+    padding: 10rpx;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20rpx;
+}
+.comment_img{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.content{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.content .content_top{
+    color: #666;
+    font-size: 24rpx;
+    display: flex;
+    justify-content: space-between;
+}
+.conmment_content{
+    font-size: 28rpx;
+}
