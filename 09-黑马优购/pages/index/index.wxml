@@ -1,0 +1,41 @@
+<view >
+  首页
+  <text class="icofont icon-soucang" >
+    
+  </text>
+  <!-- 搜索框 -->
+  <SearchInput></SearchInput>
+
+  <!-- 轮播图 -->
+  <swiper  indicator-dots autoplay interval="3000" duration="1000" circular>
+    <swiper-item wx:for="{{swiperList}}" wx:key="{{index}}">
+      <image  src="{{item.image_src}}" mode="widthFix"></image>
+    </swiper-item>
+  </swiper>
+
+  <!-- 导航部分 -->
+  <view class="nav" >
+    <navigator url="{{item.navigator_url}}" wx:for="{{navList}}" wx:key="{{index}}" open-type="{{item.open_type}}">
+      <image src="{{item.image_src}}" mode="widthFix" ></image>
+    </navigator>
+  </view>
+
+  <!-- 楼层列表 -->
+  <view class="floorList">
+    <view class="floor_group" wx:for="{{floorList}}" wx:key="{{index}}">
+      <!-- 标题 -->
+      <view class="floor_title">
+        <image src="{{item.floor_title.image_src}}" mode="widthFix" ></image>
+      </view>
+      <!-- 内容 -->
+      <view class="floor_content">
+        <navigator wx:for="{{item.product_list}}" wx:for-index="index1" wx:for-item="item1" wx:key="{{index1}}" >
+          <!--widthFix 宽度不变，高度自动变化，保持原图宽高比不变  第一张图可以这样，但是后四张图的高度需要按计算出来的高度，所以这个模式不再适用 
+             scaleToFill	缩放模式，不保持纵横比缩放图片，使图片的宽高完全拉伸至填满 image 元素-->
+          <image src="{{item1.image_src}}" mode="{{index1===0?'widthFix':'scaleToFill'}}" ></image>
+          
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

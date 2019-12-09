@@ -1,0 +1,118 @@
+
+.cart_wrap {
+    // 收货地址
+    .address {
+        padding: 15rpx;
+        button{
+            font-size: 30rpx;
+            width: 60%;
+        }
+        .address_info_row{
+            display: flex;
+            padding: 20rpx;
+            .address_info{
+                flex: 5;
+            }
+            .address_phone{
+                flex: 2;
+                text-align: right;
+            }
+        }
+    }
+
+    // 购物车内容
+    .cart_content{
+        .cart_title{
+            color: var(--themeColor);
+            font-size: 30rpx;
+            padding: 20rpx;
+            border-top: 2rpx solid currentColor;
+            border-bottom: 2rpx solid currentColor;
+        }
+        .cart_main{
+            .cart_item{
+                display: flex;
+                padding: 10rpx;
+                border-bottom: 1rpx solid #ccc;
+            
+                .image_wrap{
+                    flex: 2;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    image{
+                        width: 80%;
+                    }
+                }
+                .goods_info{
+                    flex: 4;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    .goods_title{
+                        display: -webkit-box;
+                        overflow: hidden;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        color: #666;
+                    }
+                    .goods_price_wrap{
+                        display: flex;
+                        justify-content: space-between;
+                        .price{
+                            color: var(--themeColor);
+                            font-weight: bold;
+                        }
+                        .num_tool_wrap{
+                            display: flex;
+                            
+                            .num{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 45rpx;
+                                height: 45rpx;
+                                color: #666;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 底部结算部分
+    .bottom_tool {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 90rpx;
+        border-top: 1rpx solid #ccc;
+        display: flex;
+      
+        .total_wrap {
+            flex: 4;
+            text-align: right;
+            padding-right: 15rpx;
+          .total_price {
+            color: var(--themeColor);
+            font-weight: bold;
+            font-size: 32rpx;
+          }
+          .postage{
+              font-size: 24rpx;
+          }
+        }
+      
+        .pay_btn {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--themeColor);
+            color: #fff;
+            font-size: 30rpx;
+        }
+      }
+}

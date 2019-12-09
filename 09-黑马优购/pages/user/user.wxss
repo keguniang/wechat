@@ -1,0 +1,99 @@
+page {
+  background-color: #edece8;
+}
+.user_info_wrap {
+  height: 45vh;
+}
+.user_info_wrap .user_img_wrap {
+  background-color: var(--themeColor);
+}
+.user_info_wrap .user_img_wrap .user_img_big {
+  height: 45vh;
+  position: relative;
+  filter: blur(10px);
+}
+.user_info_wrap .user_img_wrap .user_img_big .user_btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 40rpx;
+}
+.user_info_wrap .user_img_wrap .user_img_big .user_info {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 40rpx;
+}
+.user_info_wrap .user_img_wrap .user_img_big .user_info .user_avatar {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.user_info_wrap .user_img_wrap .user_img_big .user_info .user_nickname {
+  margin-top: 40rpx;
+  color: #fff;
+}
+.user_content {
+  position: relative;
+}
+.user_content .user_main {
+  color: #666;
+  margin-bottom: 100rpx;
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -40rpx;
+}
+.user_content .user_main .history_wrap {
+  background-color: #fff;
+  padding: 10rpx 0;
+  text-align: center;
+  display: flex;
+}
+.user_content .user_main .history_wrap navigator {
+  flex: 1;
+}
+.user_content .user_main .history_wrap navigator .his_num {
+  color: var(--themeColor);
+}
+.user_content .user_main .order_wrap {
+  margin-top: 30rpx;
+  background-color: #fff;
+}
+.user_content .user_main .order_wrap .order_title {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.user_content .user_main .order_wrap .order_content {
+  display: flex;
+  padding: 20rpx;
+}
+.user_content .user_main .order_wrap .order_content navigator {
+  flex: 1;
+}
+.user_content .user_main .order_wrap .order_content navigator .iconfont {
+  color: var(--themeColor);
+  font-size: 40rpx;
+}
+.user_content .user_main .order_wrap .order_content navigator .order_name {
+  margin-top: 10rpx;
+}
+.user_content .user_main .address_manager,
+.user_content .user_main .recommend {
+  margin-top: 30rpx;
+  background-color: #fff;
+  padding: 20rpx;
+}
+.user_content .user_main .app_info {
+  margin-top: 30rpx;
+  background-color: #fff;
+}
+.user_content .user_main .app_info .contact {
+  display: flex;
+  justify-content: space-between;
+}
+.user_content .user_main .app_info .app_item {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}

@@ -1,0 +1,102 @@
+.cart_wrap .address {
+  padding: 15rpx;
+}
+.cart_wrap .address button {
+  font-size: 30rpx;
+  width: 60%;
+}
+.cart_wrap .address .address_info_row {
+  display: flex;
+  padding: 20rpx;
+}
+.cart_wrap .address .address_info_row .address_info {
+  flex: 5;
+}
+.cart_wrap .address .address_info_row .address_phone {
+  flex: 2;
+  text-align: right;
+}
+.cart_wrap .cart_content .cart_title {
+  color: var(--themeColor);
+  font-size: 30rpx;
+  padding: 20rpx;
+  border-top: 2rpx solid currentColor;
+  border-bottom: 2rpx solid currentColor;
+}
+.cart_wrap .cart_content .cart_main .cart_item {
+  display: flex;
+  padding: 10rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.cart_wrap .cart_content .cart_main .cart_item .image_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart_wrap .cart_content .cart_main .cart_item .image_wrap image {
+  width: 80%;
+}
+.cart_wrap .cart_content .cart_main .cart_item .goods_info {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cart_wrap .cart_content .cart_main .cart_item .goods_info .goods_title {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #666;
+}
+.cart_wrap .cart_content .cart_main .cart_item .goods_info .goods_price_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.cart_wrap .cart_content .cart_main .cart_item .goods_info .goods_price_wrap .price {
+  color: var(--themeColor);
+  font-weight: bold;
+}
+.cart_wrap .cart_content .cart_main .cart_item .goods_info .goods_price_wrap .num_tool_wrap {
+  display: flex;
+}
+.cart_wrap .cart_content .cart_main .cart_item .goods_info .goods_price_wrap .num_tool_wrap .num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45rpx;
+  height: 45rpx;
+  color: #666;
+}
+.cart_wrap .bottom_tool {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  border-top: 1rpx solid #ccc;
+  display: flex;
+}
+.cart_wrap .bottom_tool .total_wrap {
+  flex: 4;
+  text-align: right;
+  padding-right: 15rpx;
+}
+.cart_wrap .bottom_tool .total_wrap .total_price {
+  color: var(--themeColor);
+  font-weight: bold;
+  font-size: 32rpx;
+}
+.cart_wrap .bottom_tool .total_wrap .postage {
+  font-size: 24rpx;
+}
+.cart_wrap .bottom_tool .pay_btn {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--themeColor);
+  color: #fff;
+  font-size: 30rpx;
+}

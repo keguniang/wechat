@@ -1,0 +1,103 @@
+// 为了让底部导航栏不影响页面的内容
+page{
+    margin-bottom: 80rpx;
+}
+.detail_wraper {
+    padding: 10rpx;
+    swiper {
+        // 查看图片的宽高是1:1的关系，所以可以直接用vw
+        height: 70vw;
+        text-align: center;
+        swiper-item {
+            image {
+                width: 70%;
+            }
+        }
+    }
+    .goods_price{
+        color: var(--themeColor);
+        font-size: 30rpx;
+        margin-bottom: 10rpx;
+        font-weight: bold;
+    }
+    .goods_name_row{
+        padding:15rpx 0;
+        border-bottom: 5rpx solid #dedede;
+        display: flex;
+        .goods_name{
+            color: #000;
+            flex: 5;
+            border-right: 2px solid #bbb;
+            // 文字缩略显示
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+        .goods_collect{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+    .goods_detail{
+        .goods_detail_title{
+            color: var(--themeColor);
+            font-size: 30rpx;
+            font-weight: bold;
+            padding: 20rpx;
+        }
+        .goods_detail_content{}
+    }
+
+    // 底部工具栏部分
+    .btm_tool{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        background-color: #fff;
+        width: 100%;
+        height: 80rpx;
+        display: flex;
+        font-size: 24rpx;
+        .tool_item{
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            button{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+            }
+        }
+        .btn_car{
+            flex:2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffa300;
+            color: white;
+            font-weight: bold;
+        }
+        .btn_buy{
+            flex:2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5554e;
+            color: white;
+            font-weight: bold;
+        }
+    }
+
+}

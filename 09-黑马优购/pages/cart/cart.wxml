@@ -1,0 +1,74 @@
+<view class="cart_wrap">
+    <!-- 当不存在收货地址时  按钮显示 如果是对象，即时是空对象，化成bool类型时也是true,所以采用!address.userName -->
+    <view class="address">
+        <view wx:if="{{!address.userName}}">
+            <button type="primary" plain bindtap="getAddress">获取收货地址</button>
+        </view>
+        <!-- 当收货地址存在时 显示详细的地址信息 -->
+        <view class="address_info_row" wx:else>
+            <view class="address_info">
+                <view class="user_name">{{address.userName}}</view>
+                <view class="user_address">{{address.all}}</view>
+            </view>
+            <view class="address_phone">{{address.telNumber}}</view>
+        </view>
+    </view>
+
+    <!-- 购物车内容 -->
+    <view class="cart_content" >
+        <view class="cart_title">购物车</view>
+        <view class="cart_main">
+        <!-- 购物车中有商品 -->
+        <block wx:if="{{cart.length!=0}}">
+            <view class="cart_item" wx:for="{{cart}}" wx:key="{{index}}">
+                <!-- 复选框 -->
+                <view class="checkbox_wrap">
+                    <checkbox-group bindchange="handleItemChange" data-id = "{{item.goods_id}}">
+                        <checkbox  checked="{{item.checked}}"/>
+                    </checkbox-group>
+                </view>
+                <!-- 图片 -->
+                <view class="image_wrap">
+                    <image src="{{item.pics[0].pics_mid}}" mode="widthFix" ></image>
+                </view>
+                <!-- 商品信息 -->
+                <view class="goods_info">
+                    <view class="goods_title">少{{item.goods_name}}</view>
+                    <view class="goods_price_wrap">
+                        <view class="price">￥{{item.goods_price}}</view>
+                        <view class="num_tool_wrap">
+                            <view class="num_tool" bindtap="numChange" data-id="{{item.goods_id}}" data-operation = "{{-1}}">-</view>
+                            <view class="num">{{item.num}}</view>
+                            <view class="num_tool" bindtap="numChange" data-id="{{item.goods_id}}" data-operation = "{{1}}">+</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+        <!-- 购物车中没有商品 -->
+        <block wx:else>
+            <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1576131671&di=701bc14133caabf3d1904569b527d2fb&imgtype=jpg&er=1&src=http%3A%2F%2Fm.hua.com%2Fimages%2Fgwc_k.png" mode="widthFix" >
+                
+            </image>
+        </block>
+        </view>
+    </view>
+
+    <!-- 底部结算部分 -->
+    <view class="bottom_tool">
+        <!-- 复选框 -->
+        <view class="chk_wrap">
+            <checkbox-group bindchange="allCheck">
+                <checkbox  checked="{{allChecked}}"/>全选
+            </checkbox-group>
+        </view>
+        <!-- 合计 -->
+        <view class="total_wrap">
+            合计：
+            <text class="total_price">￥{{allPrice}}</text>
+            <view class="postage">包含运费</view>
+        </view>
+        <!-- 结算btn -->
+        <view class="pay_btn" bindtap="accountBtn">结算（{{allNum}}）</view>
+    </view>
+</view>

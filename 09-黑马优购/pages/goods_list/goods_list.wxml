@@ -1,0 +1,18 @@
+<view >
+<!-- 搜索框 -->
+    <SearchInput></SearchInput>
+    <!-- 标题导航栏 -->
+    <Tabs tabs='{{tabs}}' bindcurrentIndex = 'getCurrentIndex'></Tabs>
+    <!-- 商品列表 -->
+    <view class="first_tap">
+        <navigator wx:for="{{goodsList}}" wx:key="{{index}}" url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}">
+            <view class="goods_img_wrap">
+                <image  src="{{item.goods_small_logo?item.goods_small_logo:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575284648115&di=e7450d21148ec0836e4c613cbd3bb321&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fbdaca9a07e1a8947c00c2f826ebf848750927aa24963-cATwbg_fw658'}}" mode="widthFix" ></image>
+            </view>
+            <view class="goods_info_wrap">
+                <view class="goods_name">{{item.goods_name}}</view>
+                <view class="goods_desc">￥{{item.goods_price}}</view>
+            </view>
+        </navigator>
+    </view>
+</view>

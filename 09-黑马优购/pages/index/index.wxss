@@ -1,0 +1,49 @@
+view {
+  /* 使用主体颜色 */
+  /* color: var(--themeColor); */
+}
+/* 轮播图部分 */
+swiper {
+  width: 100%;
+  height: cala(340rpx);
+}
+swiper image {
+  width: 100%;
+}
+/* 导航部分 */
+.nav {
+  display: flex;
+  width: 100%;
+  padding: 20rpx;
+}
+.nav navigator {
+  flex: 1;
+}
+.nav navigator image {
+  width: 100%;
+}
+.floorList .floor_group .floor_title {
+  padding: 10rpx 0;
+}
+.floorList .floor_group .floor_title image {
+  width: 100%;
+}
+.floorList .floor_group .floor_content {
+  overflow: hidden;
+}
+.floorList .floor_group .floor_content navigator {
+  float: left;
+  width: 33.33%;
+}
+.floorList .floor_group .floor_content navigator:nth-last-child(-n+4) {
+  height: 207.97413793rpx;
+  border-left: 10rpx solid #fff;
+}
+.floorList .floor_group .floor_content navigator:nth-child(2),
+.floorList .floor_group .floor_content navigator:nth-child(3) {
+  border-bottom: 10rpx solid #fff;
+}
+.floorList .floor_group .floor_content navigator image {
+  width: 100%;
+  height: 100%;
+}
